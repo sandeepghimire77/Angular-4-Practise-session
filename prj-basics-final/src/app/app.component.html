@@ -1,0 +1,19 @@
+<app-header (featureselected)="onNavigatee($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="loadedfeature !== 'shopping-list'"></app-recipes>
+      <app-shopping-list *ngIf="loadedfeature === 'shopping-list'"></app-shopping-list>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-asim-ngfor-practise></app-asim-ngfor-practise>
+    </div>
+  </div>
+</div>
